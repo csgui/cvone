@@ -1,0 +1,76 @@
+% Declares the type of document, known as the class
+% The class controls the overall appearance of the document
+\documentclass[]{cvone}
+
+\usepackage{lipsum} % This package can be removed.
+                    % It's used to generate some dummy text.
+
+% ---------------------------------------------------------------------------
+% Everything before \begin{document} is part of the preamble
+% ---------------------------------------------------------------------------
+
+\begin{document}
+
+\makeheader{Perseverance,}{the Rover}{Exploring Mars}
+
+\section{Profile}
+\sectiontext{\textcolor{customgrey}{
+    \lipsum[1]
+}}
+
+\noindent
+\begin{minipage}[t]{0.7\linewidth}
+  \section{Recent Experiences}
+  \employmentitem
+      {2017/07}{Present}
+      {Software Architect}
+      {webverse.io}
+      {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        \begin{itemize}
+          \item Lorem ipsum dolor sit amet.
+          \item Lorem ipsum dolor sit amet.
+          \item Lorem ipsum dolor sit amet.
+        \end{itemize}
+      }
+  \employmentitem
+      {2012/07}{2017/01}
+      {Software Engineer}
+      {webverse.io}
+      {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        \begin{itemize}
+          \item Lorem ipsum dolor sit amet.
+          \item Lorem ipsum dolor sit amet.
+          \item Lorem ipsum dolor sit amet.
+        \end{itemize}
+      }
+  \employmentitem
+      {2008/07}{2012/01}
+      {Intern}
+      {webverse.io}
+      {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        \begin{itemize}
+          \item Lorem ipsum dolor sit amet.
+          \item Lorem ipsum dolor sit amet.
+          \item Lorem ipsum dolor sit amet.
+        \end{itemize}
+      }
+\end{minipage}
+\begin{minipage}[t]{0.3\linewidth}
+  \section{Technologies}
+  \eightypercent{Java / JVM based languages}
+  \eightypercent{NodeJS / Javascript}
+  \ninetypercent{Ruby / Ruby on Rails}
+  \eightypercent{Cloud Based Solutions}
+  \seventypercent{Distributed Systems}
+  \eightypercent{REST Services}
+  \sixtypercent{System Programming}
+  \seventypercent{Docker and Kubernetes}
+  \section{Fields}
+  \ninetypercent{\faLaptop\, Software Development}
+  \seventypercent{\faPieChart\, Consulting}
+  \sixtypercent{\faUsers\, Mentoring}
+\end{minipage}
+
+\makefooter{+1 555 555 555}{Jezero Crater, Mars}{perseverance@mars.com}
+
+\end{document}
